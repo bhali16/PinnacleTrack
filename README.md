@@ -1,2 +1,3 @@
 # PinnacleTrack
-Opensource Project Management tool for Software Agencies
+
+Project Management tool for Software Agencies
