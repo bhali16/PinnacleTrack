@@ -162,7 +162,8 @@ cython_debug/
 #.idea/
 
 
-# Add migrations to gitignore expecpt __init__.py
-./**/migrations/*
-!./**/migrations/__init__.py
+# Ignore all migration files
+*/migrations/*
 
+# But don't ignore the __init__.py files in any app's migrations folder
+!*/migrations/__init__.py
