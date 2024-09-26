@@ -1,3 +1,3 @@
 # PinnacleTrack
 
-Project Management tool for Software Agencies
+Project Management Tool
