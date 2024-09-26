@@ -1,3 +1,4 @@
+version: '3'
 services:
   app:
     build:
@@ -10,3 +11,18 @@ services:
       - ./app:/app
     command: >
       sh -c "python manage.py runserver 0.0.0.0:8000"
+
+  postgres-db:
+    image: postgres:latest
+    environment:
+      POSTGRES_DB: $POSTGRES_DB
+      POSTGRES_USER: $POSTGRES_USER
+      POSTGRES_PASSWORD: $POSTGRES_PASSWORD
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+# Define volumes here
+volumes:
+  postgres_data:

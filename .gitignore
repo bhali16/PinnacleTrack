@@ -162,8 +162,8 @@ cython_debug/
 #.idea/
 
 
-# Ignore all migration files
-*/migrations/*
+# Ignore all migration files inside the app directory
+app/*/migrations/*
 
 # But don't ignore the __init__.py files in any app's migrations folder
-!*/migrations/__init__.py
+!app/*/migrations/__init__.py

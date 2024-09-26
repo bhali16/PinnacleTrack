@@ -1,4 +1,6 @@
-FROM python:3.12-alpine:3.20
+# Add python 3.13 base image
+
+FROM python:3.12-slim
 LABEL maintainer="bhali16"
 
 ENV PYTHONBUFFERED 1
